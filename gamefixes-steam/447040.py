@@ -3,9 +3,8 @@
 
 from protonfixes import util
 
-
 def main():
-    """disable Easy Anti-Cheat and online play, disable uplay overlay and change closebehavior"""
+    # Disable UPlay overlay and change CloseBehavior
     util.disable_uplay_overlay()
-    # Replace launcher with game exe in proton arguments
+    # Disable Easy Anti-Cheat and online play; replace launcher with game's EXE in Proton arguments
     util.append_argument("-eac_launcher -nosplash")
